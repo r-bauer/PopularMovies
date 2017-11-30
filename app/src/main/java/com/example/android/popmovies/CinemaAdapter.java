@@ -67,7 +67,11 @@ public class CinemaAdapter extends RecyclerView.Adapter<CinemaAdapter.CinemaAdap
 
         String selectedMovie = mMovieInfo[position].posterPath;
         Log.d(TAG, "selected Movie = " + selectedMovie);
-        Picasso.with(cinemaAdapterViewHolder.mContext).load(selectedMovie).into(cinemaAdapterViewHolder.mMoviePosterView);
+        Picasso.with(cinemaAdapterViewHolder.mContext)
+                .load(selectedMovie)
+                .placeholder(R.drawable.placeholder)
+                .error(R.drawable.error)
+                .into(cinemaAdapterViewHolder.mMoviePosterView);
 
     }
 

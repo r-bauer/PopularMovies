@@ -45,11 +45,6 @@ public final class OpenFilmJsonUtils {
 
             JSONObject movieInformation = movieArray.getJSONObject(i);
 
-            String sTitle = movieInformation.getString("title");
-            String sPoster = "http://image.tmdb.org/t/p/w185/" + movieInformation.getString("poster_path");
-            String sBackdrop = "http://image.tmdb.org/t/p/w185/" + movieInformation.getString("backdrop_path");
-            String sOverview = movieInformation.getString("overview");
-
             MovieInformation mi = new MovieInformation(
                     movieInformation.getInt("vote_count"),
                     movieInformation.getInt("id"),

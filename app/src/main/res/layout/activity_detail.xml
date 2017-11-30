@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+    <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
     android:orientation="vertical">
 
         <TextView
@@ -11,7 +15,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="25sp"
-            android:textStyle="bold"/>
+                android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,7 +28,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:contentDescription="@string/poster"
-                android:padding="8dp"/>
+                    android:padding="8dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -33,7 +37,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/release"
                     android:textStyle="bold"/>
@@ -44,7 +48,7 @@
                     android:textAlignment="center"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/rating"
                     android:textStyle="bold"/>
@@ -55,7 +59,7 @@
                     android:textAlignment="center"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/plot"
                     android:textStyle="bold"/>
@@ -75,3 +79,5 @@
             android:contentDescription="@string/backdrop" />
 
 </LinearLayout>
+    </ScrollView>
+

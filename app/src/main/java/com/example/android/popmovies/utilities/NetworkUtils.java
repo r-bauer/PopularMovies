@@ -1,6 +1,9 @@
 package com.example.android.popmovies.utilities;
 
 import android.net.Uri;
+
+import com.example.android.popmovies.BuildConfig;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -21,7 +24,6 @@ public final class NetworkUtils {
 
     public static URL buildUrl(String typeQuery) {
         // TODO : put a valid api key here
-//       String sFilmUrl = "http://api.themoviedb.org/3/movie/" + typeQuery +"?api_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
         String sFilmUrl = "http://api.themoviedb.org/3/movie/" + typeQuery +"?api_key=[YOUR_API_KEY]";
 
         Uri builtUri = Uri.parse(sFilmUrl).buildUpon()

@@ -60,16 +60,7 @@ public class MainActivity extends AppCompatActivity implements CinemaAdapterOnCl
     private void loadFilmData() {
         showFilmDataView();
 
-        String sType;
-
-        if (bMovieType == true)
-        {
-            sType = "popular";
-        }
-        else
-        {
-            sType = "top_rated";
-        }
+        String sType = (bMovieType == true) ? "popular" : "top_rated";
 
         new FetchFilmTask().execute(sType);
     }
